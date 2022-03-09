@@ -1,0 +1,23 @@
+section{
+    margin-top: 3%;
+}
+
+.middle{
+    margin-bottom: 5%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 30%;
+    background: white;
+    margin-bottom: 2%;
+}
+
+img{
+    width: 100%;
+}

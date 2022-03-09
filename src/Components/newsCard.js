@@ -5,7 +5,6 @@ import './newsCard.css';
 const NewsCard = () => {
 
     const [newsType, setNewsType] = useState('apple')
-    // const [lang, setNewLang] = useState('de')
     const [newsArr, setNewsArr] = useState([])
 
     useEffect(() => {
@@ -34,15 +33,6 @@ const NewsCard = () => {
                 <article className="middle">
                     <button onClick={() => { setNewsType('apple') }}>Apple</button>
                     <button onClick={() => { setNewsType('tesla') }}>Tesla</button>
-                    {/* <select name="" id="" onChange={() => setNewLang((e) => {
-                        e.target.onChange = e.value
-                    })}> */}
-                    {/* <option value="de">Deutsch</option>
-                        <option value="en">English</option>
-                        <option value="fr">Français</option>
-                        <option value="en">Español</option>
-                        <option value="pt">Portuguais</option>
-                    </select> */}
                 </article>
 
                 <div className="flex">
@@ -52,7 +42,7 @@ const NewsCard = () => {
                             <h1>{items.title}</h1>
                             <p>{items.description}</p>
                             <p>{items.publishedAt}</p>
-                            <a href="">Read More</a>
+                            <a href={items.url}>Read More</a>
                         </article>
                     ))}
                 </div>
